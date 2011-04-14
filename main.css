@@ -5,3 +5,14 @@ text-align: center;
 #tagline{
 text-align: center;
 }
+
+#logintable {
+width: 20%;
+padding: 5px;
+text-align: center;
+border: 1px solid black;
+}
+
+.button {
+
+}
