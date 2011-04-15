@@ -3,8 +3,7 @@
 <head></head>
 <body>
 <link rel="stylesheet" type="text/css" href="main.css" />
-<h1>Chanakya</h1>
-<p id="tagline">Employee Performance Management System</p>
+<h2 id="tagline">Employee Performance Management System</h2>
 <br />
 <table id="logintable">
 <tr><td>
