@@ -23,10 +23,11 @@
 	<!-- navigation starts-->	
 	<div id="nav">
 		<ul>
-			<li id="current"><a href="index.php">Home</a></li>
+			<li><a href="index.php">Home</a></li>
 			<li><a href="http://www.styleshout.com/templates/preview/MarketPlace11/2-columns.html">2-Columns</a></li>
-			<li><a href="register.php">Register</a></li>			
+			<li id="current"><a href="register.php">Register</a></li>			
 			<li><a href="">Services</a></li>
+			<li><a href="">Support</a></li>
 			<li><a href="">About</a></li>		
 		</ul>
 	<!-- navigation ends-->	
@@ -90,6 +91,9 @@
 		</div>		
 	<!-- content-wrap ends-->	
 		<div id="main">
+		<?php
+		include('Register.php');
+		?>
 		</div>
 	</div>
 		

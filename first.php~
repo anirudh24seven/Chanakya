@@ -12,7 +12,21 @@
 
 <!-- wrap starts here -->
 <div id="wrap">
-	
+
+	<!--header -->
+	<div id="header">			
+				
+		<div id="header-links">
+		<p>
+			<a href="">Home</a> | 
+			<a href="">Contact</a> | 
+			<a href="">Site Map</a>			
+		</p>		
+		</div>		
+		
+	<!--header ends-->					
+	</div>
+		
 	<div id="header-photo">
 	
 		<h1 id="logo-text"><a href="" title="">EPM</a></h1>		
@@ -23,10 +37,11 @@
 	<!-- navigation starts-->	
 	<div id="nav">
 		<ul>
-			<li id="current"><a href="index.php">Home</a></li>
+			<li id="current"><a href="">Home</a></li>
 			<li><a href="http://www.styleshout.com/templates/preview/MarketPlace11/2-columns.html">2-Columns</a></li>
 			<li><a href="register.php">Register</a></li>			
 			<li><a href="">Services</a></li>
+			<li><a href="">Support</a></li>
 			<li><a href="">About</a></li>		
 		</ul>
 	<!-- navigation ends-->	
