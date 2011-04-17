@@ -23,10 +23,10 @@
 	<!-- navigation starts-->	
 	<div id="nav">
 		<ul>
-			<li id="current"><a href="index.php">Home</a></li>
+			<li><a href="index.php">Home</a></li>
 <!--			<li><a href="http://www.styleshout.com/templates/preview/MarketPlace11/2-columns.html">2-Columns</a></li>-->
 			<li><a href="register.php">Register</a></li>			
-			<li><a href="">About</a></li>		
+			<li id="current"><a href="about.php">About</a></li>		
 		</ul>
 	<!-- navigation ends-->	
 	</div>					
@@ -47,10 +47,9 @@
 		</div>		
 	<!-- content-wrap ends-->	
 		<div id="main">
-			<h1>Employee Performance Management</h1>
-			<p>Employee Performance Management is a tool created to manage the performance of Employees regularly.</p>
-			<p>It focuses on various competencies essential for organization’s growth and are required to be acquired and maintained by the
-employees. </p>
+			<h1>About</h1>
+			<p>This project is done by Anirudh S, S Ganapathy and V Bala for our 6th semester project for the DBMS Course</p> 
+			<p>We would like to thank our faculty, Sri. E. Sivasankar for giving us the opportunity to work on this project. </p>
 		</div>
 	</div>
 		

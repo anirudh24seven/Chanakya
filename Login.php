@@ -1,5 +1,3 @@
-<?php
-?>
 <h1>Login:</h1>
 <table>
 <form id="login_form" action="" method="post">

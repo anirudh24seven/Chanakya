@@ -24,11 +24,9 @@
 	<div id="nav">
 		<ul>
 			<li><a href="index.php">Home</a></li>
-			<li><a href="http://www.styleshout.com/templates/preview/MarketPlace11/2-columns.html">2-Columns</a></li>
+			<!--<li><a href="http://www.styleshout.com/templates/preview/MarketPlace11/2-columns.html">2-Columns</a></li>-->
 			<li id="current"><a href="register.php">Register</a></li>			
-			<li><a href="">Services</a></li>
-			<li><a href="">Support</a></li>
-			<li><a href="">About</a></li>		
+			<li><a href="about.php">About</a></li>		
 		</ul>
 	<!-- navigation ends-->	
 	</div>					

@@ -1,4 +1,12 @@
 <?php
+$con = mysql_connect("localhost","root","mysql");
+	if (!$con) {
+	  die('Could not connect: ' . mysql_error());
+	}
+	
+	mysql_select_db("EmployeePerformance", $con);
+		
+	if(!isset($_COOKIE['ID_my_site'])) {	
 ?>
 <h1>Login:</h1>
 <table>

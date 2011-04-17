@@ -24,10 +24,9 @@
 	<div id="nav">
 		<ul>
 			<li id="current"><a href="index.php">Home</a></li>
-			<li><a href="http://www.styleshout.com/templates/preview/MarketPlace11/2-columns.html">2-Columns</a></li>
+<!--			<li><a href="http://www.styleshout.com/templates/preview/MarketPlace11/2-columns.html">2-Columns</a></li>-->
 			<li><a href="register.php">Register</a></li>			
-			<li><a href="">Services</a></li>
-			<li><a href="">About</a></li>		
+			<li><a href="about.php">About</a></li>		
 		</ul>
 	<!-- navigation ends-->	
 	</div>					
@@ -35,49 +34,7 @@
 	<!-- content-wrap starts -->
 	<div id="content-wrap" class="three-col">	
 	
-		<div id="sidebar">
-			
-			<h1>Search Box</h1>	
-			<form action="" class="searchform">
-				<p>
-				<input name="search_query" class="textbox" type="text">
-  				<input name="search" class="button" value="Search" type="submit">
-				</p>			
-			</form>	
-					
-			<h1>Sidebar Menu</h1>
-			<ul class="sidemenu">				
-				<li><a href="">Home</a></li>
-				<li><a href="">Template Info</a></li>
-				<li><a href="">Sample Tags</a></li>
-				<li><a href="">More Free Templates</a></li>	
-				<li><a href="" title="Web Templates">Web Templates</a></li>
-			</ul>	
-				
-			<h1>Links</h1>
-			<ul class="sidemenu">
-				<li><a href="">PDPhoto.org</a></li>
-				<li><a href="">Squidfingers | Patterns</a></li>
-				<li><a href="">Alistapart</a></li>					
-				<li><a href="">CSS Mania</a></li>
-			</ul>
-			
-			<h1>Sponsors</h1>
-			<ul class="sidemenu">
-				<li><a href="" title="Website Templates">DreamTemplate</a></li>
-				<li><a href="" title="WordPress Themes">ThemeLayouts</a></li>
-				<li><a href="" title="Website Hosting">ImHosted.com</a></li>
-				<li><a href="" title="Stock Photos">DreamStock</a></li>
-				<li><a href="" title="Website Builder">Evrsoft</a></li>
-                <li><a href="" title="Web Hosting">Web Hosting</a></li>
-			</ul>
-			
-			<h1>Wise Words</h1>
-			<p>"We are what we repeatedly do. Excellence, then, 
-			is not an act, but a habit." </p>
-					
-			<p class="align-right">- Aristotle</p>
-					
+		<div id="sidebar">		
 		<!-- sidebar ends -->		
 		</div>
 		
@@ -90,6 +47,10 @@
 		</div>		
 	<!-- content-wrap ends-->	
 		<div id="main">
+			<h1>Employee Performance Management</h1>
+			<p>Employee Performance Management is a tool created to manage the performance of Employees regularly.</p>
+			<p>It focuses on various competencies essential for organization’s growth and are required to be acquired and maintained by the
+employees. </p>
 		</div>
 	</div>
 		
@@ -97,17 +58,7 @@
 	<div id="footer-wrap"><div id="footer">				
 			
 			<p>
-			© 2010 Your Company
-
-            &nbsp;&nbsp;&nbsp;&nbsp; 
-
-   		    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			
-			<a href="">Home</a> |
-   		    <a href="">Sitemap</a> |
-	   	    <a href="">RSS Feed</a> |
-            <a href="">XHTML</a> |
-			<a href="">CSS</a>
+			DBMS project.
 			</p>
 			
 	</div></div>
