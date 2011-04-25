@@ -23,10 +23,32 @@
 	<!-- navigation starts-->	
 	<div id="nav">
 		<ul>
-			<li id="current"><a href="index.php">Home</a></li>
+			<li><a href="index.php">Home</a></li>
 			<?php
-				include ('user.php');
-			?>
+			session_start();
+				if (!$_SESSION["valid_user"]) {
+					echo "<li><a href='register.php'>Register</a></li>";
+				}
+				else {
+					if ($_SESSION['emptype']==1) {
+						if(!$_SESSION["old_user"]) {
+							echo "<li><a href='details.php'>Insert Details</a></li>";
+						}
+						else {
+							echo "<li><a href='details.php'>View Details</a></li>";
+						}
+					}
+					else if($_SESSION['emptype']==2) {
+						echo "<li id='current'><a href='superv.php'>Employee Details</a></li>";
+					}
+					else if($_SESSION['emptype']==3) {
+						echo "<li id='current'><a href='manag.php'>Employee Details</a></li>";
+					}
+					else if($_SESSION['emptype']==4) {
+						echo "<li id='current'><a href='details.php'>View Details</a></li>";
+					}
+				}
+?>
 			<li><a href="faq.php">FAQ</a></li>					
 			<li><a href="about.php">About</a></li>		
 		</ul>
@@ -61,10 +83,7 @@
 				
 	<!-- content-wrap ends-->	
 		<div id="main">
-			<h1>Employee Performance Management</h1>
-			<p>Employee Performance Management is a tool created to manage the performance of Employees regularly.</p>
-			<p>It focuses on various competencies essential for organization’s growth and are required to be acquired and maintained by the
-employees. </p>
+			<?php include('supervisor.php');?>
 		</div>
 	</div>
 		

@@ -2,7 +2,7 @@
 
 <html>
 <head>
-<link rel="stylesheet" href="./Marketplace_files/MarketPlace.css" type="text/css">
+<link rel="stylesheet" href="main.css" type="text/css">
 
 <title>Employee Performance Management</title>
 
@@ -15,8 +15,8 @@
 	
 	<div id="header-photo">
 	
-		<h1 id="logo-text"><a href="" title="">EPM</a></h1>		
-		<h2 id="slogan">Employee Performance Management</h2>	
+		<h1 id="logo-text"><a href="" title="">Employee Performance Management</a></h1>		
+		<h2 id="slogan">Managing Employee Performance...</h2>	
 			
 	</div>		
 			
@@ -24,31 +24,42 @@
 	<div id="nav">
 		<ul>
 			<li><a href="index.php">Home</a></li>
-<!--			<li><a href="http://www.styleshout.com/templates/preview/MarketPlace11/2-columns.html">2-Columns</a></li>-->
-			<li><a href="register.php">Register</a></li>			
+			<?php
+				include ('user.php');
+			?>
+			<li><a href="faq.php">FAQ</a></li>
 			<li id="current"><a href="about.php">About</a></li>		
 		</ul>
 	<!-- navigation ends-->	
 	</div>					
 			
 	<!-- content-wrap starts -->
-	<div id="content-wrap" class="three-col">	
-	
-		<div id="sidebar">		
-		<!-- sidebar ends -->		
-		</div>
-		
+	<div id="content-wrap" class="two-col">	
+			
 		<div id="rightcolumn">
 		
 			<?php
-			include ('Login.php');
+			session_start();
+			
+			if (!$_SESSION["valid_user"]) {
+				// User not logged in, redirect to login page
+				include ('Login.php');
+			}
+			else {
+				// Display Member information
+				echo "<p>Welcome " . $_SESSION["valid_user"] . "!";
+				echo "<p>Logged in: " . date("m/d/Y", $_SESSION["valid_time"]);
+				
+				// Display logout link
+				echo "<p><a href=\"logout.php\">Click here to logout!</a></p>";
+			}
 			?>		
 					
 		</div>		
 	<!-- content-wrap ends-->	
 		<div id="main">
 			<h1>About</h1>
-			<p>This project is done by Anirudh S, S Ganapathy and V Bala for our 6th semester project for the DBMS Course</p> 
+			<p>This project is done by Anirudh S, Ganapathy Subramanian and Venkataraman Balasubramanian for our 6th semester project for the DBMS Course</p> 
 			<p>We would like to thank our faculty, Sri. E. Sivasankar for giving us the opportunity to work on this project. </p>
 		</div>
 	</div>

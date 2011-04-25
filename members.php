@@ -2,7 +2,7 @@
 
 <html>
 <head>
-<link rel="stylesheet" href="main.css" type="text/css">
+<link rel="stylesheet" href="./Marketplace_files/MarketPlace.css" type="text/css">
 
 <title>Employee Performance Management</title>
 
@@ -24,41 +24,40 @@
 	<div id="nav">
 		<ul>
 			<li id="current"><a href="index.php">Home</a></li>
-			<?php
-				include ('user.php');
-			?>
-			<li><a href="faq.php">FAQ</a></li>					
+
+			<li><a href="register.php">Register</a></li>			
 			<li><a href="about.php">About</a></li>		
 		</ul>
 	<!-- navigation ends-->	
 	</div>					
 			
 	<!-- content-wrap starts -->
-	<div id="content-wrap" class="two-col">	
+	<div id="content-wrap" class="three-col">	
 	
-		<!--<div id="sidebar">		
-				
-		</div>-->
+		<div id="sidebar">		
+		<!-- sidebar ends -->		
+		</div>
 		
-		<div id="rightcolumn">		
-			<?php
+		<div id="rightcolumn">
+		
+		<?php
 			session_start();
 			
-			if (!$_SESSION["valid_user"]) {
+			if (!$_SESSION["valid_user"])
+				{
 				// User not logged in, redirect to login page
-				include ('Login.php');
-			}
-			else {
-				// Display Member information
-				echo "<p>Welcome " . $_SESSION["valid_user"] . "!";
-				echo "<p>Logged in: " . date("m/d/Y", $_SESSION["valid_time"]);
-				
-				// Display logout link
-				echo "<p><a href=\"logout.php\">Click here to logout!</a></p>";
-			}
-			?>					
-		</div>
-				
+				Header("Location: index.php");
+				}
+
+			// Display Member information
+			echo "<p>Welcome " . $_SESSION["valid_user"] . "!";
+			echo "<p>Logged in: " . date("m/d/Y", $_SESSION["valid_time"]);
+			
+			// Display logout link
+			echo "<p><a href=\"logout.php\">Click here to logout!</a></p>";
+		?>	
+					
+		</div>		
 	<!-- content-wrap ends-->	
 		<div id="main">
 			<h1>Employee Performance Management</h1>
